@@ -1,5 +1,5 @@
 {
-  "name": "leagueml-react-components",
+  "name": "@league.ml/react-components",
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
