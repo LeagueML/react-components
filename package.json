@@ -1,11 +1,15 @@
 {
   "name": "leagueml-react-components",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/LeagueML/react-components",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.18.9",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
@@ -16,17 +20,22 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.15",
     "babel-loader": "^8.2.5",
+    "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^2.77.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "rollup -c"
   }
 }
